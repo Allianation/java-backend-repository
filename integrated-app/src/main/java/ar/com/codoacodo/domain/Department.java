@@ -1,0 +1,50 @@
+package ar.com.codoacodo.domain;
+
+public class Department {
+	
+	private Long id;
+	private String nombre;
+	private Double presupuesto;
+	
+	public Department() {
+		super();
+	}
+
+	public Department(Long id, String nombre, Double presupuesto) {
+		super();
+		this.id = id;
+		this.nombre = nombre;
+		this.presupuesto = presupuesto;
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public Double getPresupuesto() {
+		return presupuesto;
+	}
+
+	public void setPresupuesto(Double presupuesto) {
+		this.presupuesto = presupuesto;
+	}
+
+	@Override
+	public String toString() {
+		return "Department [id=" + id + ", nombre=" + nombre + ", presupuesto=" + presupuesto + "]";
+	}
+	
+
+}
